@@ -12,9 +12,6 @@ var terser = require("gulp-terser");
 var server = require("browser-sync").create();
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
-var svgstore = require("gulp-svgstore");
-var posthtml = require("gulp-posthtml");
-var include = require("posthtml-include");
 var del = require("del");
 
 gulp.task("css", function () {
@@ -25,7 +22,6 @@ gulp.task("css", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest("source/css"))
     .pipe(gulp.dest("build/css"))
     .pipe(csso())
     .pipe(rename("style.min.css"))
@@ -38,7 +34,6 @@ gulp.task("css", function () {
 gulp.task("js", function () {
   return gulp.src("source/js/script.js")
     .pipe(sourcemap.init())
-    .pipe(gulp.dest("source/js"))
     .pipe(gulp.dest("build/js"))
     .pipe(terser())
     .pipe(rename("script.min.js"))
@@ -59,7 +54,7 @@ gulp.task("server", function () {
 
   gulp.watch("source/less/**/*.less", gulp.series("css"));
   gulp.watch("source/js/*.js", gulp.series("js"));
-  gulp.watch(("source/img/icon-*.svg"), gulp.series("sprite", "html", "refresh"));
+  gulp.watch(("source/img/icon-*.svg"), gulp.series("html", "refresh"));
   gulp.watch(("source/*.html"), gulp.series("html", "refresh"));
 });
 
@@ -75,26 +70,9 @@ gulp.task("images", function () {
 });
 
 gulp.task("webp", function () {
-  return gulp.src("source/img/*.{jpg}")
+  return gulp.src("source/img/*.{jpg,png}")
     .pipe(webp({quality: 90}))
     .pipe(gulp.dest("source/img"));
-});
-
-gulp.task("sprite", function () {
-  return gulp.src("source/img/icon-*.svg")
-    .pipe(svgstore({
-      inlineSvg: true
-    }))
-    .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("build/img"));
-});
-
-gulp.task("html", function () {
-  return gulp.src("source/*.html")
-    .pipe(posthtml([
-      include()
-    ]))
-    .pipe(gulp.dest("build"));
 });
 
 gulp.task("copy", function() {
@@ -117,9 +95,7 @@ gulp.task("build", gulp.series(
   "clean",
   "copy",
   "css",
-  "js",
-  "sprite",
-  "html"
+  "js"
 ));
 
 gulp.task("refresh", function (done) {
@@ -132,7 +108,5 @@ gulp.task("start", gulp.series(
   "copy",
   "css",
   "js",
-  "sprite",
-  "html",
   "server"
 ));

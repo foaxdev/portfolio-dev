@@ -13,7 +13,7 @@ body {
 
   font-family: "Open Sans", "Arial", sans-serif;
 
-  background-color: @white;
+  background-color: @black;
 }
 
 img {
@@ -24,9 +24,7 @@ a {
   text-decoration: none;
 }
 
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
+.visually-hidden:not(:focus):not(:active) {
   position: absolute;
 
   width: 1px;
@@ -40,8 +38,4 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.svg-template {
-  display: none;
 }

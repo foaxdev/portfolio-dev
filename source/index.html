@@ -5,14 +5,211 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
 
     <script src="js/picturefill.min.js" async></script>
   </head>
   <body>
-    <div class="svg-template">
-      <include src="build/img/sprite.svg"></include>
-    </div>
+    <header class="header">
+      <div class="header__wrap">
+        <button class="header__toggle" type="button">Close/open menu</button>
+        <ul class="languages-list">
+          <li class="languages-list__item"><button class="languages-list__button languages-list__button--russian" type="button">Russian</button></li>
+          <li class="languages-list__item"><button class="languages-list__button languages-list__button--english" type="button">English</button></li>
+          <li class="languages-list__item"><button class="languages-list__button languages-list__button--japanese" type="button">Japanese</button></li>
+        </ul>
+        <nav class="main-nav">
+          <ul class="nav-list">
+            <li class="nav-list_item"><a class="nav-list_link" href="#about-me">About me</a></li>
+            <li class="nav-list_item"><a class="nav-list_link" href="#what-i-use">What I use</a></li>
+            <li class="nav-list_item"><a class="nav-list_link" href="#portfolio">Portfolio</a></li>
+            <li class="nav-list_item"><a class="nav-list_link" href="#education">Education</a></li>
+            <li class="nav-list_item"><a class="nav-list_link" href="#">Contacts</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="about-me" id="about-me">
+        <h1 class="visually-hidden">Portfolio Irina Kovalchuk</h1>
+        <div class="about-me__wrap">
+          <picture>
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/kovalchuk-desktop.webp">
+            <source type="image/webp" srcset="img/kovalchuk-mobile.webp">
 
+            <source media="(min-width: 768px)" srcset="img/kovalchuk-desktop.jpg">
+            <img class="about-me__image" src="img/kovalchuk-mobile.jpg" alt="Profile picture" width="100" height="95">
+          </picture>
+          <b class="about-me__name">Irina Kovalchuk</b>
+          <p class="about-me__age">25 y.o.</p>
+          <p class="about-me__location">Fryazino, Russia</p>
+          <p class="about-me__profession">Frontend developer</p>
+        </div>
+      </section>
+      <section class="what-i-use" id="what-i-use">
+        <h2 class="what-i-use__header">Technologies</h2>
+        <ul class="tech-list">
+          <li class="tech-list__item">HTML 5 + CSS 3 + JS</li>
+          <li class="tech-list__item">BEM</li>
+          <li class="tech-list__item">Gulp</li>
+          <li class="tech-list__item">Cross-browser markups (including Internet Explorer 11)</li>
+          <li class="tech-list__item">Progressive enhancement</li>
+          <li class="tech-list__item">Accessibility</li>
+          <li class="tech-list__item">JS and CSS animation</li>
+          <li class="tech-list__item">Git</li>
+        </ul>
+      </section>
+      <section class="portfolio" id="portfolio">
+        <h2 class="portfolio__header">Portfolio</h2>
+        <ul class="markups-list">
+          <li class="markups-list__item">
+            <picture>
+              <source type="image/webp" srcset="img/preview-sea-cruises.webp">
+
+              <img class="markups-list__image" src="img/preview-sea-cruises.jpg" alt="Preview of markup Sea cruises" width="270" height="199">
+            </picture>
+            <a class="markups-list__link" href="http://foaxdev.github.io/sea-cruises">Demo</a>
+            <a class="markups-list__link" href="https://github.com/foaxdev/sea-cruises-dev">Source code</a>
+            <p class="markups-list__description-button">Description</p>
+            <div class="markups-list__description markups-list__description--hidden"></div>
+          </li>
+          <li class="markups-list__item">
+            <picture>
+              <source type="image/webp" srcset="img/preview-pognali.webp">
+
+              <img class="markups-list__image" src="img/preview-pognali.jpg" alt="Preview of markup Pognali" width="270" height="199">
+            </picture>
+            <a class="markups-list__link" href="http://foaxdev.github.io/pognali">Demo</a>
+            <a class="markups-list__link" href="https://github.com/foaxdev/pognali-dev">Source code</a>
+            <p class="markups-list__description-button">Description</p>
+            <div class="markups-list__description markups-list__description--hidden"></div>
+          </li>
+          <li class="markups-list__item">
+            <picture>
+              <source type="image/webp" srcset="img/preview-mishka.webp">
+
+              <img class="markups-list__image" src="img/preview-mishka.jpg" alt="Preview of markup Mishka" width="270" height="199">
+            </picture>
+            <a class="markups-list__link" href="http://foaxdev.github.io/mishka">Demo</a>
+            <a class="markups-list__link" href="https://github.com/foaxdev/mishka-dev">Source code</a>
+            <p class="markups-list__description-button">Description</p>
+            <div class="markups-list__description markups-list__description--hidden"></div>
+          </li>
+          <li class="markups-list__item">
+            <picture>
+              <source type="image/webp" srcset="img/preview-gllacy.webp">
+
+              <img class="markups-list__image" src="img/preview-gllacy.jpg" alt="Preview of markup Gllacy" width="270" height="199">
+            </picture>
+            <a class="markups-list__link" href="http://foaxdev.github.io/gllacy">Demo</a>
+            <a class="markups-list__link" href="https://github.com/foaxdev/gllacy-dev">Source code</a>
+            <p class="markups-list__description-button">Description</p>
+            <div class="markups-list__description markups-list__description--hidden"></div>
+          </li>
+          <li class="markups-list__item">
+            <picture>
+              <source type="image/webp" srcset="img/preview-device.webp">
+
+              <img class="markups-list__image" src="img/preview-device.jpg" alt="Preview of markup Device" width="270" height="199">
+            </picture>
+            <a class="markups-list__link" href="https://foaxdev.github.io/device/">Demo</a>
+            <a class="markups-list__link" href="https://github.com/foaxdev/device-dev">Source code</a>
+            <p class="markups-list__description-button">Description</p>
+            <div class="markups-list__description markups-list__description--hidden"></div>
+          </li>
+        </ul>
+      </section>
+      <section class="editors" id="editors">
+        <h2 class="editors__header">Available graphic editors</h2>
+        <ul class="graphic-editors-list">
+          <li class="graphic-editors-list__item">
+            <picture>
+              <source type="image/webp" srcset="img/logo-figma.png">
+
+              <img class="graphic-editors-list__image" src="img/logo-figma.png" alt="Figma logotype" width="60" height="60">
+            </picture>
+          </li>
+          <li class="graphic-editors-list__item">
+            <picture>
+              <source type="image/webp" srcset="img/logo-zeplin.webp">
+
+              <img class="graphic-editors-list__image" src="img/logo-zeplin.png" alt="Zeplin logotype" width="60" height="60">
+            </picture>
+          </li>
+          <li class="graphic-editors-list__item">
+            <picture>
+              <source type="image/webp" srcset="img/logo-photoshop.webp">
+
+              <img class="graphic-editors-list__image" src="img/logo-photoshop.png" alt="Photoshop logotype" width="60" height="60">
+            </picture>
+          </li>
+          <li class="graphic-editors-list__item">
+            <picture>
+              <source type="image/webp" srcset="img/logo-xd.webp">
+
+              <img class="graphic-editors-list__image" src="img/logo-xd.png" alt="XD logotype" width="60" height="58">
+            </picture>
+          </li>
+          <li class="graphic-editors-list__item">
+            <picture>
+              <source type="image/webp" srcset="img/logo-affinity-photo.webp">
+
+              <img class="graphic-editors-list__image" src="img/logo-affinity-photo.png" alt="Affinity photo logotype" width="60" height="60">
+            </picture>
+          </li>
+          <li class="graphic-editors-list__item">
+            <picture>
+              <source type="image/webp" srcset="img/logo-affinity-designer.webp">
+
+              <img class="graphic-editors-list__image" src="img/logo-affinity-designer.png" alt="Affinity designer logotype" width="60" height="60">
+            </picture>
+          </li>
+        </ul>
+      </section>
+      <section class="education" id="education">
+        <h2 class="education__header">Education</h2>
+        <p class="education__description">Currently I study in <a class="education__link" href="https://htmlacademy.ru">HTML Academy</a>.</p>
+        <p class="education__description">React-developer specialisation.</p>
+        <p class="education__description">Here's the <a class="education__link" href="https://htmlacademy.ru/profile/foaxdev">link</a> to my student's account.</p>
+        <p class="education__description">And achieved certification:</p>
+        <ul class="certificates-list">
+          <li class="certificates-list__item">
+            <a class="certificates-list__link" href="https://assets.htmlacademy.ru/certificates/intensive/109/673735.pdf?1560923176">
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/certificate-html-css-1-tablet.webp">
+                <source type="image/webp" srcset="img/certificate-html-css-1-mobile.webp">
+
+                <source media="(min-width: 768px)" srcset="img/certificate-html-css-1-tablet.png">
+                <img class="certificates-list__image" src="img/certificate-html-css-1-mobile.png" alt="Professional HTML & CSS level 1 certificate" width="125" height="175">
+              </picture>
+              <p class="certificates-list__title">Professional HTML & CSS level 1</p>
+            </a>
+          </li>
+          <li class="certificates-list__item">
+            <a class="certificates-list__link" href="https://assets.htmlacademy.ru/certificates/intensive/115/673735.pdf?1565872591">
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/certificate-html-css-2-tablet.webp">
+                <source type="image/webp" srcset="img/certificate-html-css-2-mobile.webp">
+
+                <source media="(min-width: 768px)" srcset="img/certificate-html-css-2-tablet.png">
+                <img class="certificates-list__image" src="img/certificate-html-css-2-mobile.png" alt="Professional HTML & CSS level 2 certificate" width="125" height="175">
+              </picture>
+              <p class="certificates-list__title">Professional HTML & CSS level 2</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="contacts" id="contacts">
+      <h2 class="contacts__header">Contacts</h2>
+      <a class="contacts__link contacts__link--telegram" href="https://web.telegram.org/#/im?p=@foaxdev"><svg enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="30" height="30" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" fill="#039be5" r="12"/><path d="m5.491 11.74 11.57-4.461c.537-.194 1.006.131.832.943l.001-.001-1.97 9.281c-.146.658-.537.818-1.084.508l-3-2.211-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953z" fill="#fff"/></svg></a>
+      <a class="contacts__link contacts__link--facebook" href="https://www.facebook.com/foaxdev"><?xml version="1.0" encoding="iso-8859-1"?><svg width="30" height="30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 112.196 112.196" style="enable-background: new 0 0 112.196 112.196;" xml:space="preserve"><g><circle style="fill: #3b5998;" cx="56.098" cy="56.098" r="56.098"/><path style="fill: #ffffff;" d="M70.201,58.294h-10.01v36.672H45.025V58.294h-7.213V45.406h7.213v-8.34 c0-5.964,2.833-15.303,15.301-15.303L71.56,21.81v12.51h-8.151c-1.337,0-3.217,0.668-3.217,3.513v7.585h11.334L70.201,58.294z"/></g></svg></a>
+      <a class="contacts__link" href="mailto:synthbeing@icloud.com">synthbeing@icloud.com</a>
+
+      <div class="copyrights">Telegram icon is made by <a class="copyrights__link" href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a class="copyrights__link" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+      <div class="copyrights">Facebook icons is made by <a class="copyrights__link" href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a class="copyrights__link" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    </footer>
     <script src="js/script.min.js"></script>
   </body>
 </html>
