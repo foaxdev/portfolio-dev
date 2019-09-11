@@ -20,7 +20,8 @@
     "gulp-terser": "^1.2.0",
     "gulp-webp": "^4.0.1",
     "stylelint": "10.1.x",
-    "stylelint-config-htmlacademy": "0.1.x"
+    "stylelint-config-htmlacademy": "0.1.x",
+    "merge": ">=1.2.1"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
