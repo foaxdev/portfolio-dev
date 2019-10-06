@@ -4,7 +4,6 @@
   "private": true,
   "description": "Foaxdev portfolio",
   "devDependencies": {
-    "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.5.x",
     "browser-sync": "2.26.x",
     "del": "^5.0.0",
@@ -18,15 +17,9 @@
     "gulp-rename": "^1.4.0",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-terser": "^1.2.0",
-    "gulp-webp": "^4.0.1",
-    "stylelint": "10.1.x",
-    "stylelint-config-htmlacademy": "0.1.x",
-    "merge": ">=1.2.1"
+    "gulp-webp": "^4.0.1"
   },
   "scripts": {
-    "editorconfig": "editorconfig-cli",
-    "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
-    "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
     "start": "gulp start"
   },
@@ -34,14 +27,6 @@
     "last 2 versions",
     "IE 11",
     "Firefox ESR"
-  ],
-  "editorconfig-cli": [
-    "*.json",
-    "*.js",
-    "source/*.html",
-    "source/js/**/*.js",
-    "source/img/**/*.svg",
-    "source/less/**/*.less"
   ],
   "engines": {
     "node": "8.16"
