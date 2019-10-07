@@ -38,7 +38,6 @@ gulp.task("js", function () {
     .pipe(terser())
     .pipe(rename("script.min.js"))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("source/js"))
     .pipe(gulp.dest("build/js"))
     .pipe(server.stream());
 });

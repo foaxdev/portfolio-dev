@@ -9,14 +9,16 @@
         <source media="(min-width: 768px)" srcset="img/kovalchuk-desktop.jpg">
         <img class="about-me__image" src="img/kovalchuk-mobile.jpg" alt="<?=$lang[$language]["profilePicture"];?>" width="100" height="95">
       </picture>
-      <b class="about-me__name"><?=$lang[$language]["myName"];?></b>
-      <p class="about-me__age"><?=$lang[$language]["myAges"];?></p>
-      <p class="about-me__location"><?=$lang[$language]["myLocation"];?></p>
-      <p class="about-me__profession"><?=$lang[$language]["myPosition"];?></p>
+      <div class="about-me__info-wrap">
+        <b class="about-me__name"><?=$lang[$language]["myName"];?></b>
+        <p class="about-me__age"><?=$lang[$language]["myAges"];?></p>
+        <p class="about-me__location"><?=$lang[$language]["myLocation"];?></p>
+        <p class="about-me__profession"><?=$lang[$language]["myPosition"];?></p>
+      </div>
     </div>
   </section>
   <section class="what-i-use" id="what-i-use">
-    <h2 class="what-i-use__header"><?=$lang[$language]["technologies"];?></h2>
+    <h2 class="heading"><?=$lang[$language]["technologies"];?></h2>
     <ul class="tech-list">
       <li class="tech-list__item">HTML 5 + CSS 3 + JS</li>
       <li class="tech-list__item"><?=$lang[$language]["bem"];?></li>
@@ -29,7 +31,7 @@
     </ul>
   </section>
   <section class="portfolio" id="portfolio">
-    <h2 class="portfolio__header"><?=$lang[$language]["portfolio"];?></h2>
+    <h2 class="heading"><?=$lang[$language]["portfolio"];?></h2>
     <ul class="markups-list">
       <?php foreach ($portfolio as $project_name => $work): ?>
       <li class="markups-list__item">
@@ -38,16 +40,20 @@
 
           <img class="markups-list__image" src="img/portfolio/preview-<?=$project_name;?>.jpg" alt="<?=$lang[$language]["previewOfMarkup"];?> <?=$lang[$language][$project_name]["title"];?>" width="270" height="199">
         </picture>
-        <a class="markups-list__link" href="<?=$work["prod-link"];?>"><?=$lang[$language]["demo"];?></a>
-        <a class="markups-list__link" href="<?=$work["source-link"];?>"><?=$lang[$language]["sourceCode"];?></a>
-        <button class="markups-list__description-button" type="button"><?=$lang[$language]["description"];?></button>
-        <div class="markups-list__description markups-list__description--hidden"><?=$lang[$language][$project_name]["description"];?></div>
+        <div class="markups-list__links-wrap">
+          <a class="markups-list__link" href="<?=$work["prod-link"];?>"><?=$lang[$language]["demo"];?></a>
+          <a class="markups-list__link" href="<?=$work["source-link"];?>"><?=$lang[$language]["sourceCode"];?></a>
+        </div>
+        <div class="markups-list__description-wrap">
+          <button class="markups-list__description-button" type="button"><?=$lang[$language]["description"];?></button>
+          <div class="markups-list__description markups-list__description--hidden"><?=$lang[$language][$project_name]["description"];?></div>
+        </div>
       </li>
       <?php endforeach; ?>
     </ul>
   </section>
   <section class="editors" id="editors">
-    <h2 class="editors__header"><?=$lang[$language]["availableGraphicEditors"];?></h2>
+    <h2 class="heading"><?=$lang[$language]["availableGraphicEditors"];?></h2>
     <ul class="graphic-editors-list">
       <?php foreach ($graphic_editors as $editor => $title): ?>
       <li class="graphic-editors-list__item">
@@ -56,16 +62,17 @@
 
           <img class="graphic-editors-list__image" src="img/graphic-editors/logo-<?=$editor;?>.png" alt="<?=$title;?> <?=$lang[$language]["logotype"];?>" width="60" height="60">
         </picture>
+        <span class="graphic-editors-list__title"><?=$title;?></span>
       </li>
       <?php endforeach; ?>
     </ul>
   </section>
   <section class="education" id="education">
-    <h2 class="education__header"><?=$lang[$language]["education"];?></h2>
-    <p class="education__description"><?=$lang[$language]["currentlyIStudyIn"];?> <a class="education__link" href="https://htmlacademy.ru">HTML Academy</a>.</p>
+    <h2 class="heading"><?=$lang[$language]["education"];?></h2>
+    <p class="education__description"><?=$lang[$language]["currentlyIStudyIn"];?>.</p>
     <p class="education__description"><?=$lang[$language]["specialisation"];?>.</p>
-    <p class="education__description"><?=$lang[$language]["hereIs"];?> <a class="education__link" href="https://htmlacademy.ru/profile/foaxdev"><?=$lang[$language]["link"];?></a> <?=$lang[$language]["toMyStudentsAccount"];?>.</p>
-    <p class="education__description"><?=$lang[$language]["achievedCertification"];?>:</p>
+    <p class="education__description"><?=$lang[$language]["hereIs"];?><a class="education__link" href="https://htmlacademy.ru/profile/foaxdev"><?=$lang[$language]["link"];?></a><?=$lang[$language]["toMyStudentsAccount"];?>.</p>
+    <b class="education__description"><?=$lang[$language]["achievedCertification"];?>:</b>
     <ul class="certificates-list">
       <?php foreach ($certificates as $title => $link): ?>
       <li class="certificates-list__item">

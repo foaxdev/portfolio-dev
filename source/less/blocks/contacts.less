@@ -1,0 +1,53 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  margin-top: 40px;
+}
+
+.contacts__links-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.contacts__link {
+  .hide-text();
+  border-radius: 50%;
+
+  &--stack-overflow,
+  &--kwork {
+    border-radius: 0;
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.4);
+    outline: none;
+  }
+
+  &:active {
+    box-shadow: 0 2px 10px 0 rgba(0, 176, 199, 0.8);
+    outline: none;
+  }
+
+  &--email {
+    align-self: center;
+    margin-bottom: 20px;
+    
+    font-size: 16px;
+    color: @blue;
+    line-height: 16px;
+
+    &:hover,
+    &:focus {
+      box-shadow: none;
+      opacity: 0.6;
+    }
+
+    &:active {
+      box-shadow: none;
+      opacity: 0.3;
+    }
+  }
+}
