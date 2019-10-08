@@ -80,7 +80,8 @@ gulp.task("copy", function() {
     "source/template/**",
     "source/*.php",
     "source/js/*.js",
-    "source/css/*.css"
+    "source/css/*.css",
+    "source/*.ico"
   ], {
     base: "source"
   })

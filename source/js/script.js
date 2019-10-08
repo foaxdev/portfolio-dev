@@ -2,7 +2,6 @@ let elButtonToggle = document.querySelector(".js-toggle-btn");
 let elNavigation = document.querySelector(".js-nav");
 let elsMenuLinks = document.querySelectorAll(".nav-list_link");
 let elsDescriptionButtons = document.querySelectorAll(".js-description-btn");
-console.log(elsDescriptionButtons);
 
 hideNavigation();
 addListenerForMenuButton();
