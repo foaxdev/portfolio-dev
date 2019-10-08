@@ -34,7 +34,6 @@ gulp.task("css", function () {
 gulp.task("js", function () {
   return gulp.src("source/js/script.js")
     .pipe(sourcemap.init())
-    .pipe(gulp.dest("build/js"))
     .pipe(terser())
     .pipe(rename("script.min.js"))
     .pipe(sourcemap.write("."))

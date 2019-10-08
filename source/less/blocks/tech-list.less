@@ -27,3 +27,13 @@
     background-repeat: no-repeat;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .tech-list__item {
+    padding-left: 30px;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}

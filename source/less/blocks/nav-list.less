@@ -22,17 +22,44 @@
   vertical-align: middle;
 
   font-weight: 700;
-  color: @black;
+  color: @white;
   text-transform: uppercase;
 
   &:hover,
   &:focus {
-    color: @blue;
+    color: @green;
     outline: none;
   }
 
   &:active {
     opacity: 0.3;
     outline: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .nav-list_link {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .nav-list {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .nav-list_item {
+    padding-top: 0;
+    padding-right: 30px;
+
+    &:first-child {
+      padding-top: 0;
+    }
+
+    &:last-child {
+      padding-bottom: 0;
+      padding-right: 0;
+    }
   }
 }

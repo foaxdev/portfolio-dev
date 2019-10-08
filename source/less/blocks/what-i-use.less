@@ -1,4 +1,21 @@
 .what-i-use {
-  margin-top: 40px;
-  padding: 0 20px;
+  background: linear-gradient(to right, @green, @blue);
+}
+
+.what-i-use__wrap {
+  padding: 40px 20px 20px 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .what-i-use__wrap {
+    padding: 40px 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .what-i-use__wrap {
+    margin: 0 auto;
+    padding: 40px 40px 50px 40px;
+    width: 1200px;
+  }
 }

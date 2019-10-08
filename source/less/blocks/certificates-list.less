@@ -21,4 +21,35 @@
 
 .certificates-list__title {
   text-align: center;
+  color: @blue;
+}
+
+@media (min-width: @tablet-width) {
+  .certificates-list {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+
+  .certificates-list__item {
+    max-width: 230px;
+    margin-right: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .certificates-list {
+    justify-content: flex-start;
+  }
+
+  .certificates-list__item {
+    margin-right: 0;
+    max-width: 260px;
+
+    &:not(:nth-child(4n)) {
+      margin-right: 25px;
+    }
+  }
 }

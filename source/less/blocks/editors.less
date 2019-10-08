@@ -1,4 +1,22 @@
 .editors {
-  margin-top: 40px;
-  padding: 0 20px;
+  background: linear-gradient(to right, @green, @blue);
+}
+
+.editors__wrap {
+  padding: 40px 20px 20px 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .editors__wrap {
+    margin-top: 50px;
+    padding: 40px 30px 10px 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .editors__wrap {
+    margin: 50px auto 0 auto;
+    padding: 50px 40px 30px 40px;
+    width: 1200px;
+  }
 }

@@ -2,6 +2,7 @@
   .list-reset();
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .graphic-editors-list__item {
@@ -26,10 +27,9 @@
   display: none;
   padding: 10px 15px;
 
-  color: @white;
   text-align: center;
 
-  background-color: @blue;
+  background-color: @green;
   border-radius: 4px;
 
   &::after {
@@ -45,6 +45,22 @@
 
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
-    border-bottom: 8px solid @blue;
+    border-bottom: 8px solid @green;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .graphic-editors-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .graphic-editors-list__item {
+    width: auto;
+    margin-bottom: 30px;
+
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
   }
 }

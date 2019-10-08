@@ -1,0 +1,30 @@
+.description-list {
+  .list-reset();
+
+  & li {
+    position: relative;
+
+    padding-left: 25px;
+    margin-bottom: 15px;
+
+    font-size: 12px;
+
+    &:first-child {
+      margin-top: 20px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 2px;
+
+      width: 16px;
+      height: 16px;
+
+      background-image: url("../img/tick.svg");
+      background-size: 16px;
+      background-repeat: no-repeat;
+    }
+  }
+}
