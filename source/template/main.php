@@ -93,7 +93,7 @@
       <?php endforeach; ?>
     </ul>
   </section>
-  <section class="editors" id="editors">
+  <section class="editors">
     <div class="editors__wrap">
       <h2 class="heading heading--white"><?=$lang[$language]["availableGraphicEditors"];?></h2>
       <ul class="graphic-editors-list">
