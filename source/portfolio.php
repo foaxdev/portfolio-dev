@@ -13,6 +13,10 @@ $portfolio = array(
     "source-link" => "https://github.com/foaxdev/mishka-dev",
     "prod-link" => "https://foaxdev.github.io/mishka/"
   ),
+  "pinch" => array(
+    "source-link" => "https://github.com/foaxdev/pinch-dev",
+    "prod-link" => "https://foaxdev.github.io/pinch/"
+  ),
   "gllacy" => array(
     "source-link" => "https://github.com/foaxdev/gllacy-dev",
     "prod-link" => "https://foaxdev.github.io/gllacy/"
