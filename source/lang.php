@@ -99,6 +99,7 @@ $LANG = array(
     "certificate-html-css-1" => "Профессиональный HTML & CSS уровень 1",
     "certificate-html-css-2" => "Профессиональный HTML & CSS уровень 2",
     "certificate-php-1" => "Профессиональный PHP уровень 1",
+    "certificate-js-1" => "Профессиональный JavaScript уровень 1",
 
     "certificate" => "сертификат"
   ),
@@ -193,6 +194,7 @@ $LANG = array(
     "certificate-html-css-1" => "Professional HTML & CSS level 1",
     "certificate-html-css-2" => "Professional HTML & CSS level 2",
     "certificate-php-1" => "Professional PHP level 1",
+    "certificate-js-1" => "Professional JavaScript level 1",
 
     "certificate" => "certificate"
   ),
@@ -292,6 +294,7 @@ $LANG = array(
     "certificate-html-css-1" => "プロフェッショナルなHTMLおよびCSSレベル1",
     "certificate-html-css-2" => "プロフェッショナルなHTMLおよびCSSレベル２",
     "certificate-php-1" => "プロフェッショナルPHPレベル1",
+    "certificate-js-1" => "プロフェッショナルJavaScriptレベル1",
 
     "certificate" => "認定"
   )
