@@ -51,9 +51,17 @@ $LANG = array(
                             <li>На странице \"Попутчики\" фильтр по странам может быть развернут, жёлтый фильтр имеет возможность свернуть развернуть каждый фильтр + работают чекбоксы.</li>
                         </ul>"
     ),
+    "wooden-coyote" => array(
+      "title" => "Сайт-визитка Wooden Coyote",
+      "description" => "<ul class='description-list'>
+                            <li>Адаптивная верстка.</li>
+                            <li>Использование grid, @supports</li>
+                            <li>Меню открывается по клику на кнопку-гамбургер.</li>
+                        </ul>"
+    ),
     "sea-cruises" => array(
       "title" => "Морские круизы",
-      "description" => "<ul class='description-list'> 
+      "description" => "<ul class='description-list'>
                             <li>Адаптивная верстка.</li>
                             <li>Для открытия модального окна, нажмите на заголовок любого круиза.</li>
                             <li>Меню открывается по клику на кнопку-гамбургер.</li>
@@ -91,7 +99,7 @@ $LANG = array(
       "description" => "<ul class='description-list'>
                             <li>Выпускная работа в HTML Academy (HTML & CSS уровень 1).</li>
                             <li>Статичная верстка.</li>
-                            <li>На главной странице работают два слайдера (секция под header'ом и секция Доставка/Гарантия/Кредит), интерактивная карта появляется по нажатию на статичную, модальное окно - по нажатию внизу на кнопку \"Напишите нам\" (предусмотрена анимация ошибки – хотя бы одно поле не заполнено).</li> 
+                            <li>На главной странице работают два слайдера (секция под header'ом и секция Доставка/Гарантия/Кредит), интерактивная карта появляется по нажатию на статичную, модальное окно - по нажатию внизу на кнопку \"Напишите нам\" (предусмотрена анимация ошибки – хотя бы одно поле не заполнено).</li>
                             <li>Сверстана страница каталога \"Моноподы для селфи\". В меню необходимо навести на \"Каталог товаров\" -> \"Моноподы для селфи\".</li>
                         </ul>"
     ),
@@ -150,9 +158,17 @@ $LANG = array(
                             <li>Filter by countries on the page \"Попутчики\" can be expanded, yellow filter has possibility to collapse and expand its every filter + work of the checkboxes.</li>
                         </ul>"
     ),
+    "wooden-coyote" => array(
+      "title" => "Landing page Wooden Coyote",
+      "description" => "<ul class='description-list'>
+                            <li>Adaptive markup.</li>
+                            <li>Using grid, @supports</li>
+                            <li>Click hamburger-button to open menu.</li>
+                        </ul>"
+    ),
     "sea-cruises" => array(
       "title" => "Sea cruises",
-      "description" => "<ul class='description-list'> 
+      "description" => "<ul class='description-list'>
                             <li>Click on the header of any cruise card to open a modal window.</li>
                             <li>Click hamburger-button to open menu.</li>
                         </ul>"
@@ -186,7 +202,7 @@ $LANG = array(
       "title" => "Device",
       "description" => "<ul class='description-list'>
                             <li>Graduation project in HTML Academy (HTML & CSS level 1).</li>
-                            <li>There are two slide-shows on the main page (section under header'ом and section Доставка/Гарантия/Кредит), click on the static map to open interactive one, click on \"Напишите нам\" to open modal window (send form without information to see the errors).</li> 
+                            <li>There are two slide-shows on the main page (section under header'ом and section Доставка/Гарантия/Кредит), click on the static map to open interactive one, click on \"Напишите нам\" to open modal window (send form without information to see the errors).</li>
                             <li>Hover \"Каталог товаров\" -> \"Моноподы для селфи\" to open another page.</li>
                         </ul>"
     ),
@@ -246,9 +262,17 @@ $LANG = array(
                             <li>Filter by countries on the page \"Попутчики\" can be expanded, yellow filter has possibility to collapse and expand its every filter + work of the checkboxes.</li>
                         </ul>"
     ),
+    "wooden-coyote" => array(
+      "title" => "ランディングページ Wooden Coyote",
+      "description" => "<ul class='description-list'>
+                            <li>Adaptive markup.</li>
+                            <li>Using grid, @supports</li>
+                            <li>Click hamburger-button to open menu.</li>
+                        </ul>"
+    ),
     "sea-cruises" => array(
       "title" => "海のクルーズ",
-      "description" => "<ul class='description-list'> 
+      "description" => "<ul class='description-list'>
                             <li>Responsive markup.</li>
                             <li>Click on the header of any cruise card to open a modal window.</li>
                             <li>Click hamburger-button to open menu.</li>
@@ -286,7 +310,7 @@ $LANG = array(
       "description" => "<ul class='description-list'>
                             <li>Graduation project in HTML Academy (HTML & CSS level 1).</li>
                             <li>Static markup.</li>
-                            <li>There are two slide-shows on the main page (section under header'ом and section Доставка/Гарантия/Кредит), click on the static map to open interactive one, click on \"Напишите нам\" to open modal window (send form without information to see the errors).</li> 
+                            <li>There are two slide-shows on the main page (section under header'ом and section Доставка/Гарантия/Кредит), click on the static map to open interactive one, click on \"Напишите нам\" to open modal window (send form without information to see the errors).</li>
                             <li>Hover \"Каталог товаров\" -> \"Моноподы для селфи\" to open another page.</li>
                         </ul>"
     ),

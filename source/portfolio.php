@@ -5,6 +5,10 @@ $portfolio = array(
     "source-link" => "https://github.com/foaxdev/pognali-dev",
     "prod-link" => "https://foaxdev.github.io/pognali/"
   ),
+  "wooden-coyote" => array(
+    "source-link" => "https://github.com/foaxdev/wooden-coyote-dev",
+    "prod-link" => "https://wooden-coyote.site"
+  ),
   "sea-cruises" => array(
     "source-link" => "https://github.com/foaxdev/sea-cruises-dev",
     "prod-link" => "https://foaxdev.github.io/sea-cruises/"
