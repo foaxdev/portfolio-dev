@@ -82,7 +82,7 @@
   </svg>
           </a>
         </div>
-        <a class="contacts__link contacts__link--email" href="mailto:synthbeing@icloud.com">synthbeing@icloud.com</a>
+        <a class="contacts__link contacts__link--email" href="mailto:foaxdev@yahoo.com">foaxdev@yahoo.com</a>
       </div>
       </footer>
   </body>
