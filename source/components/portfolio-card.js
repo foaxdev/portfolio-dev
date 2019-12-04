@@ -4,9 +4,9 @@ import {lang} from "../data/lang";
 const createCardTemplate = cardData => (
   `<li class="markups-list__item">
     <picture>
-      <source type="image/webp" srcset="img/portfolio/preview-<?=$project_name;?>.webp">
+      <source type="image/webp" srcset="img/portfolio/preview-${cardData.alias}.webp">
 
-      <img class="markups-list__image" src="img/portfolio/preview-<?=$project_name;?>.jpg" alt="<?=$lang[$language]["previewOfMarkup"];?> <?=$lang[$language][$project_name]["title"];?>" width="270" height="199">
+      <img class="markups-list__image" src="img/portfolio/preview-${cardData.alias}.jpg" alt="<?=$lang[$language]["previewOfMarkup"];?> <?=$lang[$language][$project_name]["title"];?>" width="270" height="199">
     </picture>
     <div class="markups-list__links-wrap">
       <a class="markups-list__link" href="${cardData.prodLink}">${lang.en.demo}</a>
