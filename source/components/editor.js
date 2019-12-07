@@ -1,4 +1,5 @@
 import {createElement} from "../utils";
+import AbstractComponent from "./abstract-component";
 
 const createEditorTemplate = editorData => (
   `<li class="graphic-editors-list__item">
@@ -11,25 +12,13 @@ const createEditorTemplate = editorData => (
   </li>`
 );
 
-export default class Editor {
+export default class Editor extends AbstractComponent {
   constructor(editorData) {
+    super();
     this._editorData = editorData;
-    this._element = null;
   }
 
   getTemplate() {
     return createEditorTemplate(this._editorData);
-  }
-
-  getElement() {
-    if (!this._element) {
-      this._element = createElement(this.getTemplate());
-    }
-
-    return this._element;
-  }
-
-  removeElement() {
-    this._element = null;
   }
 }

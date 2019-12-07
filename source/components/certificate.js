@@ -1,4 +1,5 @@
 import {createElement} from "../utils";
+import AbstractComponent from "./abstract-component";
 
 const createCertificateTemplate = certificateData => (
   `<li class="certificates-list__item">
@@ -15,25 +16,13 @@ const createCertificateTemplate = certificateData => (
   </li>`
 );
 
-export default class Certificate {
+export default class Certificate extends AbstractComponent {
   constructor(certificateData) {
+    super();
     this._certificateData = certificateData;
-    this._element = null;
   }
 
   getTemplate() {
     return createCertificateTemplate(this._certificateData);
-  }
-
-  getElement() {
-    if (!this._element) {
-      this._element = createElement(this.getTemplate());
-    }
-
-    return this._element;
-  }
-
-  removeElement() {
-    this._element = null;
   }
 }
