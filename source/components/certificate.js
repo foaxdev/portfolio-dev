@@ -1,5 +1,4 @@
 import {createElement} from "../utils";
-import {lang} from "../data/lang";
 
 const createCertificateTemplate = certificateData => (
   `<li class="certificates-list__item">
@@ -9,9 +8,9 @@ const createCertificateTemplate = certificateData => (
         <source type="image/webp" srcset="img/certificates/${certificateData.alias}-mobile.webp">
 
         <source media="(min-width: 768px)" srcset="img/certificates/${certificateData.alias}-tablet.png">
-        <img class="certificates-list__image" src="img/certificates/${certificateData.alias}-mobile.png" alt="${lang.en.title} ${lang.en.certificate}" width="125" height="175">
+        <img class="certificates-list__image" src="img/certificates/${certificateData.alias}-mobile.png" alt="Certificate" width="125" height="175">
       </picture>
-      <p class="certificates-list__title">${lang.en.title}</p>
+      <p class="certificates-list__title">${certificateData.title}</p>
     </a>
   </li>`
 );

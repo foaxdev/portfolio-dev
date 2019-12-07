@@ -1,12 +1,11 @@
 import {createElement} from "../utils";
-import {lang} from "../data/lang";
 
 const createEditorTemplate = editorData => (
   `<li class="graphic-editors-list__item">
     <picture>
       <source type="image/webp" srcset="img/graphic-editors/logo-${editorData.alias}.webp">
 
-      <img class="graphic-editors-list__image" src="img/graphic-editors/logo-${editorData.alias}.png" alt="${editorData.title} ${lang.en.logotype}" width="60" height="60">
+      <img class="graphic-editors-list__image" src="img/graphic-editors/logo-${editorData.alias}.png" alt="${editorData.title} logotype" width="60" height="60">
     </picture>
     <span class="graphic-editors-list__title">${editorData.title}</span>
   </li>`
