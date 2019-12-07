@@ -1,27 +1,26 @@
 {
   "name": "foaxdev",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
   "description": "Foaxdev portfolio",
   "devDependencies": {
-    "autoprefixer": "9.5.x",
-    "browser-sync": "2.26.x",
-    "del": "^5.0.0",
-    "gulp": "4.0.x",
-    "gulp-csso": "^3.0.1",
-    "gulp-imagemin": "^6.0.0",
-    "gulp-less": "4.0.x",
-    "gulp-plumber": "1.2.x",
-    "gulp-postcss": "8.0.x",
-    "gulp-posthtml": "^3.0.4",
-    "gulp-rename": "^1.4.0",
-    "gulp-sourcemaps": "^2.6.5",
-    "gulp-terser": "^1.2.0",
-    "gulp-webp": "^4.0.1"
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "autoprefixer": "^8.6.1",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^2.1.0",
+    "extract-text-webpack-plugin": "v4.0.0-alpha.0",
+    "file-loader": "^4.3.0",
+    "postcss-loader": "^2.1.5",
+    "less-loader": "^5.0.0",
+    "style-loader": "^0.23.1",
+    "webpack": "4.41.2",
+    "webpack-cli": "3.3.10",
+    "webpack-dev-server": "3.7.1"
   },
   "scripts": {
-    "build": "gulp build",
-    "start": "gulp start"
+    "build": "webpack",
+    "start": "npm run build && webpack-dev-server"
   },
   "browserslist": [
     "last 2 versions",
@@ -29,6 +28,6 @@
     "Firefox ESR"
   ],
   "engines": {
-    "node": "8.16"
+    "node": "10"
   }
 }
