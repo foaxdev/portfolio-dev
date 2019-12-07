@@ -16,6 +16,7 @@ const createCertificateTemplate = certificateData => (
 );
 
 export default class Certificate extends AbstractComponent {
+
   constructor(certificateData) {
     super();
     this._certificateData = certificateData;

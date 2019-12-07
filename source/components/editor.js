@@ -12,6 +12,7 @@ const createEditorTemplate = editorData => (
 );
 
 export default class Editor extends AbstractComponent {
+
   constructor(editorData) {
     super();
     this._editorData = editorData;

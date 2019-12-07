@@ -19,6 +19,7 @@ const createCardTemplate = cardData => (
 );
 
 export default class PortfolioCard extends AbstractComponent {
+
   constructor(cardData) {
     super();
     this._cardData = cardData;

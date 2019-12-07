@@ -1,13 +1,5 @@
 export const lang = {
   en: {
-    closeOpenMenu: "Close/open menu",
-    russian: "Russian",
-    english: "English",
-    japanese: "Japanese",
-    aboutMe: "About me",
-    whatIUse: "What I use",
-    contacts: "Contacts",
-
     profilePicture: "Profile picture",
     portfolioOfIK: "Portfolio of Irina Kovalchuk",
     myName: "Irina Kovalchuk",
@@ -20,7 +12,6 @@ export const lang = {
     progressiveEnhancement: "Progressive enhancement",
     accessibility: "Accessibility",
     animation: "JS and CSS animation",
-    portfolio: "Portfolio",
     availableGraphicEditors: "Available graphic editors",
     education: "Education",
     currentlyIStudyIn: "Currently I study in HTML Academy",
