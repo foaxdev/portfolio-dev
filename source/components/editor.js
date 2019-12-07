@@ -1,6 +1,7 @@
 import AbstractComponent from "./abstract-component";
+import {createItems} from "../utils";
 
-const createEditorTemplate = editorData => (
+const getEditorHtml = editorData => (
   `<li class="graphic-editors-list__item">
     <picture>
       <source type="image/webp" srcset="img/graphic-editors/logo-${editorData.alias}.webp">
@@ -9,6 +10,12 @@ const createEditorTemplate = editorData => (
     </picture>
     <span class="graphic-editors-list__title">${editorData.title}</span>
   </li>`
+);
+
+const createEditorTemplate = editorData => (
+  `<ul class="graphic-editors-list">
+    ${createItems(editorData, getEditorHtml)}
+  </ul>`
 );
 
 export default class Editor extends AbstractComponent {

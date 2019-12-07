@@ -1,6 +1,7 @@
 import AbstractComponent from "./abstract-component";
+import {createItems} from "../utils";
 
-const createCertificateTemplate = certificateData => (
+const getCertificateHtml = certificateData => (
   `<li class="certificates-list__item">
     <a class="certificates-list__link" href="${certificateData.link}">
       <picture>
@@ -13,6 +14,12 @@ const createCertificateTemplate = certificateData => (
       <p class="certificates-list__title">${certificateData.title}</p>
     </a>
   </li>`
+);
+
+const createCertificateTemplate = certificateData => (
+  `<ul class="certificates-list">
+    ${createItems(certificateData, getCertificateHtml)}
+  </ul>`
 );
 
 export default class Certificate extends AbstractComponent {
