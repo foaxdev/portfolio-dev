@@ -56,9 +56,9 @@
     <div class="what-i-use__wrap">
       <h2 class="heading heading--white"><?=$lang[$language]["technologies"];?></h2>
       <ul class="tech-list">
-        <li class="tech-list__item">HTML 5 + CSS 3 + JS</li>
+        <li class="tech-list__item">HTML 5 + CSS 3 + JS (ES5, ES6+)</li>
         <li class="tech-list__item"><?=$lang[$language]["bem"];?></li>
-        <li class="tech-list__item">Gulp.JS</li>
+        <li class="tech-list__item">Gulp, Webpack</li>
         <li class="tech-list__item"><?=$lang[$language]["cross-browserMarkups"];?></li>
         <li class="tech-list__item"><?=$lang[$language]["progressiveEnhancement"];?></li>
         <li class="tech-list__item"><?=$lang[$language]["accessibility"];?></li>
@@ -128,5 +128,17 @@
       </li>
       <?php endforeach; ?>
     </ul>
+  </section>
+  <section class="test-tasks" id="test-tasks">
+    <div class="test-tasks__wrap">
+      <h2 class="heading"><?=$lang[$language]["testTasks"];?></h2>
+      <ul class="tasks-list">
+      <?php foreach ($test_tasks as $task_title => $task_link): ?>
+        <li class="tasks-list__item">
+          <a class="tasks-list__link" href="<?=$task_link;?>"><?=$lang[$language][$task_title];?></a>
+        </li>
+      <?php endforeach; ?>
+      </ul>
+    </div>
   </section>
 </main>

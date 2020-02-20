@@ -4,6 +4,7 @@ require_once("lang.php");
 require_once("portfolio.php");
 require_once("graphic-editors.php");
 require_once("certificates.php");
+require_once("test-tasks.php");
 require_once("functions.php");
 
 $language = "en";
@@ -22,7 +23,8 @@ $page_content = include_template("main.php", [
   "language" => $language,
   "portfolio" => $portfolio,
   "graphic_editors" => $graphic_editors,
-  "certificates" => $certificates
+  "certificates" => $certificates,
+  "test_tasks" => $test_tasks
 ]);
 
 $layout_content = include_template("layout.php", ["content" => $page_content, "page_title" => $page_title, "lang" => $LANG, "language" => $language]);

@@ -20,11 +20,13 @@ $LANG = array(
     "myLocation" => "Москва, Россия",
     "myPosition" => "Frontend разработчик",
     "technologies" => "Технологии",
+
     "bem" => "БЭМ",
     "cross-browserMarkups" => "Кросс-браузерная вёрстка",
     "progressiveEnhancement" => "Прогрессивное улучшение",
     "accessibility" => "Доступность",
     "animation" => "JS и CSS анимация",
+
     "portfolio" => "Портфолио",
     "previewOfMarkup" => "Предпросмотр вёрстки",
     "demo" => "Демо",
@@ -110,7 +112,12 @@ $LANG = array(
     "certificate-js-1" => "Профессиональный JavaScript уровень 1",
     "certificate-js-2" => "Профессиональный JavaScript уровень 2",
 
-    "certificate" => "сертификат"
+    "certificate" => "сертификат",
+    "testTasks" => "Тестовые задания",
+    "avito-safedeal" => "Авито Safedeal",
+    "avito-realestate" => "Авито Недвижимость",
+    "atm-cards" => "Меню банкомата",
+    "advertisement" => "Реклама"
   ),
   "en" => array(
     "closeOpenMenu" => "Close/open menu",
@@ -214,7 +221,12 @@ $LANG = array(
     "certificate-js-1" => "Professional JavaScript level 1",
     "certificate-js-2" => "Professional JavaScript level 2",
 
-    "certificate" => "certificate"
+    "certificate" => "certificate",
+    "testTasks" => "Test tasks",
+    "avito-safedeal" => "Avito Safedeal",
+    "avito-realestate" => "Avito Real Estate",
+    "atm-cards" => "ATM menu",
+    "advertisement" => "Advertisement"
   ),
   "ja" => array(
     "closeOpenMenu" => "メニューを閉じる/開く",
@@ -323,6 +335,11 @@ $LANG = array(
     "certificate-js-1" => "プロフェッショナルJavaScriptレベル1",
     "certificate-js-2" => "プロフェッショナルJavaScriptレベル2",
 
-    "certificate" => "認定"
+    "certificate" => "認定",
+    "testTasks" => "テストタスク",
+    "avito-safedeal" => "Avito安全な取引",
+    "avito-realestate" => "Avito不動産",
+    "atm-cards" => "ATMメニュー",
+    "advertisement" => "広告"
   )
 );

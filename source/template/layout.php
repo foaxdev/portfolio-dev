@@ -45,6 +45,7 @@
             <li class="nav-list_item"><a class="nav-list_link" href="#portfolio"><?=$lang[$language]["portfolio"];?></a></li>
             <li class="nav-list_item"><a class="nav-list_link" href="#education"><?=$lang[$language]["education"];?></a></li>
             <li class="nav-list_item"><a class="nav-list_link" href="#contacts"><?=$lang[$language]["contacts"];?></a></li>
+            <li class="nav-list_item"><a class="nav-list_link" href="#test-tasks"><?=$lang[$language]["testTasks"];?></a></li>
           </ul>
         </nav>
       </div>
