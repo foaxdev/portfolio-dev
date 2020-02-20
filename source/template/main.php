@@ -49,10 +49,6 @@
 </g>
 </svg>
         </a>
-        <a class="about-me__link about-me__link--kwork" href="https://kwork.ru/user/foax">
-          Kwork
-          <img src="img/kwork.png" width="30" height="30" alt="">
-        </a>
       </div>
     </div>
   </section>
